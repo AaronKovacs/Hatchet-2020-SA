@@ -156,7 +156,7 @@
 			}
 
 			html, body {
-				background-color: #FFF;
+				background-color: transparent;
 			}
 
 			@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700");
@@ -526,7 +526,7 @@
 
 			.guide-header-subtitle {
 				font-family: 'CircularStd'; 
-				font-size: 30pt; 
+				font-size: 25pt; 
 				font-weight: 900; 
 				margin: 0;
 			}
@@ -537,6 +537,20 @@
 				font-weight: 100; 
 				margin: 0;
 				margin-top: 0.5em;
+			}
+
+			@media only screen and (max-width: 800px) {
+				.guide-header-title {
+					font-size: 30pt; 
+				}
+
+				.guide-header-subtitle {
+					font-size: 25pt; 
+				}
+
+				.guide-header-body {
+					font-size: 14pt;
+				} 
 			}
 
 
@@ -555,6 +569,15 @@
 				display: inline-block;
 				width: auto; 
 				margin-top: 1em;
+
+				transition-property: opacity;
+				transition-duration: 0.5s;
+				transition-timing-function: linear;
+				transition-delay: 0s;
+			}
+
+			.guide-header-read-more:hover {
+				opacity: 0.5;
 			}
 
 			.guide-section-header {
@@ -576,6 +599,16 @@
 				margin: 0; 
 				padding-bottom: 0.5em;
 				margin-bottom: 0.5em;
+			}
+
+			@media only screen and (max-width: 450px) {
+				.guide-section-header-title {
+					font-size: 20pt;
+				}
+
+				.guide-section-header-subtitle {
+					font-size: 10pt; 
+				}
 			}
 
 			.guide-section-header-divider {
@@ -600,6 +633,8 @@
 				scrollbar-width: none;
 			}
 
+
+
 			.carousel-card {
 				margin-right: 1.5em; 
 				min-width: 500px; 
@@ -608,6 +643,8 @@
 				height: 300px; 
 				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			}
+
+
 
 			.carousel-content {
 				text-align: left;
@@ -683,6 +720,125 @@
 				margin-bottom: 400px;
 			}
 
+			@media only screen and (max-width: 800px) {
+				.carousel-card-header {
+					font-size: 18pt; 
+				}
+				.carousel-container {
+					padding-left: 0.75em;
+				}
+
+				.carousel-card {
+					min-width: 400px; 
+				}
+
+				.carousel-card-title {
+					font-size: 18pt; 
+				}
+
+				.carousel-card-subtitle {
+					font-size: 10pt; 
+				}
+
+				.carousel-card-body {
+					font-size: 10pt; 
+				}
+
+				.carousel-card-link {
+					font-size: 10pt; 
+				}
+
+				.carousel-width-spacer {
+					min-width: 100px;
+				}
+			}
+
+			@media only screen and (max-width: 450px) {
+				.carousel-card-header {
+					margin-bottom: 0.5em;
+				}
+				.carousel-image {
+					width: 150px; 
+				}
+
+				.carousel-card {
+					min-width: 350px; 
+					height: 250px;
+				}
+
+				.carousel-height-spacer {
+					margin-bottom: 330px;
+				}
+			}
+
+			@media only screen and (max-width: 380px) {
+
+				.carousel-card-header {
+					font-size: 14pt; 
+				}
+
+				.carousel-card-title {
+					font-size: 14pt; 
+				}
+
+				.carousel-card-header {
+					margin-bottom: 0.5em;
+				}
+				.carousel-image {
+					width: 130px; 
+				}
+
+				.carousel-card {
+					min-width: 315px; 
+					height: 220px;
+				}
+
+				.carousel-height-spacer {
+					margin-bottom: 300px;
+				}
+
+			}
+
+			@media only screen and (max-width: 325px) {
+
+				.carousel-card-header {
+					font-size: 12pt; 
+				}
+
+				.carousel-card-title {
+					font-size: 12pt; 
+				}
+
+				.carousel-card-subtitle {
+					font-size: 8pt; 
+				}
+
+				.carousel-card-body {
+					font-size: 7pt; 
+				}
+
+				.carousel-card-link {
+					font-size: 7pt; 
+				}
+
+				.carousel-card-header {
+					margin-bottom: 0.5em;
+				}
+				.carousel-image {
+					width: 120px; 
+				}
+
+				.carousel-card {
+					min-width: 270px; 
+					height: 200px;
+				}
+
+				.carousel-height-spacer {
+					margin-bottom: 270px;
+				}
+				
+			}
+
 			.guide-news-card {
 				width: 100%;
 				height: 200px;
@@ -701,6 +857,19 @@
 				object-fit: cover; 
 				float: left; 
 				margin-right: 1em;
+			}
+
+			@media only screen and (max-width: 800px) {
+				.guide-news-image {
+					float: none;
+					width: 100%;
+					margin-top: 1em;
+					margin-bottom: 0.5em;
+				}
+
+				.guide-news-card {
+					height: auto;
+				}
 			}
 
 			.guide-news-card-header {
@@ -722,6 +891,22 @@
 				font-weight: 900; 
 				margin: 0; 
 				padding-bottom: 0.1em;
+			}
+
+			@media only screen and (max-width: 800px) {
+				.guide-news-card-title {
+					font-size: 20pt; 
+				}
+
+				.guide-news-content {
+					height: auto;
+				}
+			}
+
+			@media only screen and (max-width: 450px) {
+				.guide-news-card-title {
+					font-size: 16pt; 
+				}
 			}
 
 			.guide-news-card-subtitle {
@@ -786,13 +971,44 @@
 				background-color: white;
 			}
 
+			.endorsements-guide-op-card {
+				background-color: white; 
+				padding: 1em; 
+				margin: 2em; 
+				margin-top: 0;
+			}
+
+			@media only screen and (max-width: 800px) {
+				.endorsements-card-left {
+					float: none; 
+					width: calc(100% - 2em); 
+					margin-left: 1em; 
+					margin-right: 1em; 
+					margin-top: 1em;
+					margin-bottom: 1em;
+				}
+
+				.endorsements-card-right {
+					float: none; 
+					width: calc(100% - 2em); 
+					margin-left: 1em; 
+					margin-right: 1em; 
+					margin-top: 0em;
+					margin-bottom: 1em;
+				}
+
+				.endorsements-guide-op-card {
+					margin: 1em;
+				}
+			}
+
 			.endorsements-card-content {
 				padding: 1em;
 			}
 
 			.endorsements-image {
 				width: 100%; 
-				height: 250px;
+				height: 300px;
 				object-fit: cover; 
 			}
 
@@ -835,6 +1051,61 @@
 				color: #56A3FF;
 			}
 
+			.endorsements-op-title {
+				font-size: 20pt;
+			}
+
+			@media only screen and (max-width: 450px) {
+				.endorsements-title {
+					font-size: 18pt;
+				}
+
+				.endorsements-op-title {
+					font-size: 16pt;
+				}
+			}
+
+			.guide-header-background {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100vw;
+				background: rgb(38,38,38);
+				background: radial-gradient(circle, rgba(38,38,38,1) 0%, rgba(0,0,0,1) 100%);
+				height: 300px;
+				z-index: -1;
+			} 
+
+			.guide-header-image {
+				background-color: clear;
+				z-index: 5;
+				width: 100%; 
+				height: 400px; 
+				object-fit: contain; 
+			}
+
+			.guide-header-image-mobile {
+				display: none;
+				width: 100%; 
+				height: 450px; 
+				padding-bottom: 4em;
+				object-fit: contain; 
+			}
+
+			@media only screen and (max-width: 600px) {
+				.guide-header-image {
+					display: none;
+				}
+
+				.guide-header-image-mobile {
+					display: block;
+				}
+
+			}
+
+			a {
+				color: black;
+			}
 
 			::-webkit-scrollbar {
 				width: 0px;  /* Remove scrollbar space */
@@ -844,8 +1115,9 @@
 
 		</style>
 
-		<img style="width: 100%; height: 400px; object-fit: contain; border-bottom: linear-gradient(to bottom, red, rgba(0, 0, 0, 0)) 1 100%;" src="./SAHeader.png">
-
+		<div class="guide-header-background"></div>
+		<img class="guide-header-image" src="./SAHeader.png">
+		<img class="guide-header-image-mobile" src="./SAHeaderMobile.png">
 		<div class="guide-container basketball-guide-2017-container">
 
 			<section class="guide-section">
@@ -856,8 +1128,12 @@
 							<h4 class="guide-header-subtitle">The Hatchet's</h4>
 							<h3 class="guide-header-title">SA Guide 2020</h3>
 							<p class="guide-header-body">Short blurb introducing the guide and the trying times surrounding election. top posts often pack their platforms with promises, but.</p>
-							<p class="guide-header-read-more">Read Cover Story</p>
+
+							<a href="#">
+								<p class="guide-header-read-more">Read Cover Story</p>
+							</a>
 							
+
 						</div>
 					</div>
 				</div>
@@ -916,34 +1192,40 @@
 						are the most important explained.</p>
 						<div class="guide-section-header-divider"></div>
 					</div>
-					
+
 					<div>
-						<div class="guide-news-card">
-							<img class="guide-news-image" src="./news.jpg">
-							<div class="guide-news-content">
-								<h3 class="guide-news-card-title">SA candidates agree: Community is lacking on campus</h3>
-								<p class="guide-news-card-body">Community-building initiatives have emerged on the platforms of nearly every candidate running for Student Association spots.</p>
-								<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Kelly Hooper</p>
+						<a href="#">
+							<div class="guide-news-card">
+								<img class="guide-news-image" src="./news.jpg">
+								<div class="guide-news-content">
+									<h3 class="guide-news-card-title">SA candidates agree: Community is lacking on campus</h3>
+									<p class="guide-news-card-body">Community-building initiatives have emerged on the platforms of nearly every candidate running for Student Association spots.</p>
+									<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Kelly Hooper</p>
+								</div>
 							</div>
-						</div>
+						</a>
 
-						<div class="guide-news-card">
-							<img class="guide-news-image" src="./news.jpg">
-							<div class="guide-news-content">
-								<h3 class="guide-news-card-title">SA candidates agree: Community is lacking on campus</h3>
-								<p class="guide-news-card-body">Community-building initiatives have emerged on the platforms of nearly every candidate running for Student Association spots.</p>
-								<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Kelly Hooper</p>
+						<a href="#">
+							<div class="guide-news-card">
+								<img class="guide-news-image" src="./news.jpg">
+								<div class="guide-news-content">
+									<h3 class="guide-news-card-title">SA candidates agree: Community is lacking on campus</h3>
+									<p class="guide-news-card-body">Community-building initiatives have emerged on the platforms of nearly every candidate running for Student Association spots.</p>
+									<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Kelly Hooper</p>
+								</div>
 							</div>
-						</div>
+						</a>
 
-						<div class="guide-news-card">
-							<img class="guide-news-image" src="./news.jpg">
-							<div class="guide-news-content">
-								<h3 class="guide-news-card-title">SA candidates agree: Community is lacking on campus</h3>
-								<p class="guide-news-card-body">Community-building initiatives have emerged on the platforms of nearly every candidate running for Student Association spots.</p>
-								<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Kelly Hooper</p>
+						<a href="#">
+							<div class="guide-news-card">
+								<img class="guide-news-image" src="./news.jpg">
+								<div class="guide-news-content">
+									<h3 class="guide-news-card-title">SA candidates agree: Community is lacking on campus</h3>
+									<p class="guide-news-card-body">Community-building initiatives have emerged on the platforms of nearly every candidate running for Student Association spots.</p>
+									<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Kelly Hooper</p>
+								</div>
 							</div>
-						</div>
+						</a>
 					</div>
 
 					<div class="guide-section-header" style="margin-top: 3em;">
@@ -970,17 +1252,19 @@
 								</div>
 							</div>
 
-							<div style="background-color: white; padding: 1em; margin: 2em; margin-top: 0;">
-								<div class="guide-news-card" style="margin-bottom: 0;">
-									<img class="guide-news-image" src="./news.jpg">
-									<div class="guide-news-content">
-										<h3 class="guide-news-card-title" style="font-size: 20pt">SA candidates agree: Community is lacking on campus</h3>
-										<p class="guide-news-card-body">Community-building initiatives have emerged on the platforms of nearly every candidate running for Student Association spots.</p>
-										<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Kelly Hooper</p>
+							<a href="#">
+								<div class="endorsements-guide-op-card">
+									<div class="guide-news-card" style="margin-bottom: 0;">
+										<img class="guide-news-image" src="./news.jpg">
+										<div class="guide-news-content">
+											<h3 class="guide-news-card-title endorsements-op-title">SA candidates agree: Community is lacking on campus</h3>
+											<p class="guide-news-card-body">Community-building initiatives have emerged on the platforms of nearly every candidate running for Student Association spots.</p>
+											<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Kelly Hooper</p>
+										</div>
 									</div>
 								</div>
-							</div>
-							
+							</a>
+
 						</div>
 
 					</div>
