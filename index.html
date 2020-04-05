@@ -129,28 +129,28 @@
 
 			@font-face {
 				font-family: "CircularStd";
-				src: url("./fonts/CircularStd-Black.otf") format("opentype");
+				src: url("https://github.com/AaronKovacs/Hatchet-2020-SA/blob/master/fonts/CircularStd-Black.otf?raw=true") format("opentype");
 				font-weight: 900;
 				font-style: normal;
 			}
 
 			@font-face {
 				font-family: "CircularStd";
-				src: url("./fonts/CircularStd-Bold.otf") format("opentype");
+				src: url("https://github.com/AaronKovacs/Hatchet-2020-SA/blob/master/fonts/CircularStd-Bold.otf?raw=true") format("opentype");
 				font-weight: bold;
 				font-style: normal;
 			}
 
 			@font-face {
 				font-family: "CircularStd";
-				src: url("./fonts/CircularStd-Book.otf") format("opentype");
+				src: url("https://github.com/AaronKovacs/Hatchet-2020-SA/blob/master/fonts/CircularStd-Book.otf?raw=true") format("opentype");
 				font-weight: 100;
 				font-style: normal;
 			}
 
 			@font-face {
 				font-family: "CircularStd";
-				src: url("./fonts/CircularStd-Medium.otf") format("opentype");
+				src: url("https://github.com/AaronKovacs/Hatchet-2020-SA/blob/master/fonts/CircularStd-Medium.otf?raw=true") format("opentype");
 				font-weight: 400;
 				font-style: normal;
 			}
@@ -680,6 +680,10 @@
 				padding-bottom: 0.1em;
 			}
 
+			.carousel-card-title-smaller {
+				font-size: 22pt; 
+			}
+
 			.carousel-card-subtitle {
 				font-family: 'CircularStd'; 
 				font-size: 12pt; 
@@ -702,6 +706,10 @@
 				padding-bottom: 0.5em;
 			}
 
+			.carousel-card-body-smaller {
+				font-size: 10pt; 
+			}
+
 			.carousel-card-link {
 				font-family: 'CircularStd'; 
 				font-size: 12pt; 
@@ -717,7 +725,11 @@
 			}
 
 			.carousel-height-spacer {
-				margin-bottom: 400px;
+				margin-bottom: 750px;
+			}
+
+			.carousel-vp-spacer {
+				margin-top: 350px;
 			}
 
 			@media only screen and (max-width: 800px) {
@@ -736,11 +748,19 @@
 					font-size: 18pt; 
 				}
 
+				.carousel-card-title-smaller {
+					font-size: 18pt; 
+				}
+
 				.carousel-card-subtitle {
 					font-size: 10pt; 
 				}
 
 				.carousel-card-body {
+					font-size: 10pt; 
+				}
+
+				.carousel-card-body-smaller {
 					font-size: 10pt; 
 				}
 
@@ -767,7 +787,11 @@
 				}
 
 				.carousel-height-spacer {
-					margin-bottom: 330px;
+					margin-bottom: 610px;
+				}
+
+				.carousel-vp-spacer {
+					margin-top: 280px;
 				}
 			}
 
@@ -778,6 +802,10 @@
 				}
 
 				.carousel-card-title {
+					font-size: 14pt; 
+				}
+
+				.carousel-card-title-smaller {
 					font-size: 14pt; 
 				}
 
@@ -794,7 +822,11 @@
 				}
 
 				.carousel-height-spacer {
-					margin-bottom: 300px;
+					margin-bottom: 550px;
+				}
+
+				.carousel-vp-spacer {
+					margin-top: 250px;
 				}
 
 			}
@@ -809,11 +841,19 @@
 					font-size: 12pt; 
 				}
 
+				.carousel-card-title-smaller {
+					font-size: 12pt; 
+				}
+
 				.carousel-card-subtitle {
 					font-size: 8pt; 
 				}
 
 				.carousel-card-body {
+					font-size: 7pt; 
+				}
+
+				.carousel-card-body-smaller {
 					font-size: 7pt; 
 				}
 
@@ -834,7 +874,11 @@
 				}
 
 				.carousel-height-spacer {
-					margin-bottom: 270px;
+					margin-bottom: 490px;
+				}
+
+				.carousel-vp-spacer {
+					margin-top: 220px;
 				}
 				
 			}
@@ -1141,42 +1185,75 @@
 				<div>
 					<div class="guide-section-header">
 						<h3 class="guide-section-header-title">The Candidates</h3>
-						<p class="guide-section-header-subtitle">Their are 5 candidates running for SA this year. Three running for president
+						<p class="guide-section-header-subtitle">Their are eight candidates running for SA this year. Six running for president
 						and two for executive vice president. Swipe to see them all.</p>
 						<div class="guide-section-header-divider"></div>
 					</div>
 
 					<div class="carousel-container">
 						<div class="carousel-card">
-							<img class="carousel-image" src="./profile.jpg">
+							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2020/03/03062020_AG_BIshopWalton189-1000x1500.jpg">
 							<div class="carousel-card-header">President</div>
 							<div class="carousel-content">
-								<h3 class="carousel-card-title">Drew Amstutz</h3>
-								<p class="carousel-card-subtitle">Junior</p>
-								<p class="carousel-card-body">SA presidential candidate SJ Matthews said her experience as the president of RHA has prepped her to lead the student government.</p>
-								<a href="#" class="carousel-card-link">Read Full Bio</a>
+								<h3 class="carousel-card-title">Bishop Walton</h3>
+								<p class="carousel-card-subtitle">Sophomore</p>
+								<p class="carousel-card-body">SA presidential candidate Bishop Walton served as SA Senate secretary and as a co-chair of Black Heritage Celebration. </p>
+								<a href="https://www.gwhatchet.com/?p=1115851&preview=true" class="carousel-card-link">Read Full Bio</a>
 							</div>
 						</div>
 
 						<div class="carousel-card">
-							<img class="carousel-image" src="./profile.jpg">
+							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2020/03/03082020_AB_GeorgieBritcher118-1001x1500.jpg">
 							<div class="carousel-card-header">President</div>
 							<div class="carousel-content">
-								<h3 class="carousel-card-title">Drew Amstutz</h3>
-								<p class="carousel-card-subtitle">Junior</p>
-								<p class="carousel-card-body">SA presidential candidate SJ Matthews said her experience as the president of RHA has prepped her to lead the student government.</p>
-								<a href="#" class="carousel-card-link">Read Full Bio</a>
+								<h3 class="carousel-card-title">Georgie Britcher</h3>
+								<p class="carousel-card-subtitle">Sophomore</p>
+								<p class="carousel-card-body carousel-card-body-smaller">The GW Students for Indigenous and Native American Rights President and sophomore Georgie Britcher wants to foster collaboration among student organizations as SA president.</p>
+								<a href="https://www.gwhatchet.com/?p=111588" class="carousel-card-link">Read Full Bio</a>
 							</div>
 						</div>
 
 						<div class="carousel-card">
-							<img class="carousel-image" src="./profile.jpg">
+							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2020/03/03072020_AB_HowardBrookins180-1000x1500.jpg">
+							<div class="carousel-card-header">President</div>
+							<div class="carousel-content">
+								<h3 class="carousel-card-title carousel-card-title-smaller">Howard Brookins</h3>
+								<p class="carousel-card-subtitle">Junior</p>
+								<p class="carousel-card-body">SA Sen. Howard Brookins, U-at-Large, is running for SA president on a platform of addressing racial issues on campus and improving financial aid services.</p>
+								<a href="https://www.gwhatchet.com/?p=1116095" class="carousel-card-link">Read Full Bio</a>
+							</div>
+						</div>
+
+						<div class="carousel-card">
+							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2020/03/03072020_DA_GeorgeGlass093-1500x1000.jpg">
+							<div class="carousel-card-header">President</div>
+							<div class="carousel-content">
+								<h3 class="carousel-card-title">George Glass</h3>
+								<p class="carousel-card-subtitle">Junior</p>
+								<p class="carousel-card-body">Junior and SA Sen. George Glass is running for SA president after two terms as a senator.</p>
+								<a href="https://www.gwhatchet.com/?p=1115847&preview=true" class="carousel-card-link">Read Full Bio</a>
+							</div>
+						</div>
+
+						<div class="carousel-card">
+							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2020/03/03082020_AB_ChristianZidouemba164-1001x1500.jpg">
+							<div class="carousel-card-header">President</div>
+							<div class="carousel-content">
+								<h3 class="carousel-card-title carousel-card-title-smaller">Christian Zidouemba</h3>
+								<p class="carousel-card-subtitle">Sophomore</p>
+								<p class="carousel-card-body carousel-card-body-smaller">Sophomore Christian Zidouemba, who studies international affairs and international business, is one of six candidates vying for SA president.</p>
+								<a href="https://www.gwhatchet.com/?p=1115890" class="carousel-card-link">Read Full Bio</a>
+							</div>
+						</div>
+
+						<div class="carousel-card">
+							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2020/03/03082020_AG_DrewAmstutz128-1000x1500.jpg">
 							<div class="carousel-card-header">President</div>
 							<div class="carousel-content">
 								<h3 class="carousel-card-title">Drew Amstutz</h3>
-								<p class="carousel-card-subtitle">Junior</p>
-								<p class="carousel-card-body">SA presidential candidate SJ Matthews said her experience as the president of RHA has prepped her to lead the student government.</p>
-								<a href="#" class="carousel-card-link">Read Full Bio</a>
+								<p class="carousel-card-subtitle">Sophomore</p>
+								<p class="carousel-card-body">Sophomore and SA Vice President for Public Affairs Drew Amstutz launched his campaign for the organization's top position Tuesday.</p>
+								<a href="https://www.gwhatchet.com/?p=1115894" class="carousel-card-link">Read Full Bio</a>
 							</div>
 						</div>
 
@@ -1184,7 +1261,35 @@
 						<div class="carousel-width-spacer"></div>
 					</div>
 
+
+					<div class="carousel-container carousel-vp-spacer">
+						<div class="carousel-card">
+							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2020/03/03082020_AG_AndyLiaupsin002A-1000x1500.jpg">
+							<div class="carousel-card-header">Executive VP</div>
+							<div class="carousel-content">
+								<h3 class="carousel-card-title">Andy Liaupsin</h3>
+								<p class="carousel-card-subtitle">Freshman</p>
+								<p class="carousel-card-body carousel-card-body-smaller">Andy Liaupsin said his experience with Sunrise GW, the Progressive Student Union, Students Against Imperialism and GW for Bernie will help him push for fossil fuel divestment.</p>
+								<a href="https://www.gwhatchet.com/?p=1115892" class="carousel-card-link">Read Full Bio</a>
+							</div>
+						</div>
+
+						<div class="carousel-card">
+							<img class="carousel-image" src="https://www.gwhatchet.com/wp-content/uploads/2020/03/03072020_DA_BrandonHill065-1000x1500.jpg">
+							<div class="carousel-card-header">Executive VP</div>
+							<div class="carousel-content">
+								<h3 class="carousel-card-title">Brandon Hill</h3>
+								<p class="carousel-card-subtitle">Sophomore</p>
+								<p class="carousel-card-body carousel-card-body-smaller">SA Sen. Brandon Hill, CCAS-U, and SA Sen. Howard Brookins, U-at-Large, will serve as chair and vice chair respectively of the first-ever Black Senators' Caucus.</p>
+								<a href="https://www.gwhatchet.com/?p=1116097&preview=true" class="carousel-card-link">Read Full Bio</a>
+							</div>
+						</div>
+
+
+						<div class="carousel-width-spacer"></div>
+					</div>
 					<div class="carousel-height-spacer"></div>
+
 
 					<div class="guide-section-header">
 						<h3 class="guide-section-header-title">Referendums Explained</h3>
@@ -1194,35 +1299,46 @@
 					</div>
 
 					<div>
-						<a href="#">
+						<a href="https://www.gwhatchet.com/?p=1116328&preview=true">
 							<div class="guide-news-card">
-								<img class="guide-news-image" src="./news.jpg">
+								<img class="guide-news-image" style="background-color: #a81753; object-fit: contain;" src="https://www.gwhatchet.com/wp-content/uploads/2019/03/web_plates-01.png">
 								<div class="guide-news-content">
-									<h3 class="guide-news-card-title">SA candidates agree: Community is lacking on campus</h3>
-									<p class="guide-news-card-body">Community-building initiatives have emerged on the platforms of nearly every candidate running for Student Association spots.</p>
-									<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Kelly Hooper</p>
+									<h3 class="guide-news-card-title">Everything you need to know before you vote this week</h3>
+									<p class="guide-news-card-body">Student Association elections are this week. Here are answers to everything you should know before you cast your ballot.</p>
+									<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Makena Roberts</p>
 								</div>
 							</div>
 						</a>
 
-						<a href="#">
+						<a href="https://www.gwhatchet.com/?p=1116099&preview=true">
 							<div class="guide-news-card">
-								<img class="guide-news-image" src="./news.jpg">
+								<img class="guide-news-image" style="background-color: #a81753; object-fit: contain;" src="https://www.gwhatchet.com/wp-content/uploads/2019/03/web_plates-01.png">
 								<div class="guide-news-content">
-									<h3 class="guide-news-card-title">SA candidates agree: Community is lacking on campus</h3>
-									<p class="guide-news-card-body">Community-building initiatives have emerged on the platforms of nearly every candidate running for Student Association spots.</p>
-									<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Kelly Hooper</p>
+									<h3 class="guide-news-card-title">Largest number of candidates run for SA's top positions since 2011</h3>
+									<p class="guide-news-card-body">SA leaders said more candidates are running for top spots than in recent years as major issues gain traction, like fossil fuel divestment.</p>
+									<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Dylan Sapienza and Makena Roberts</p>
 								</div>
 							</div>
 						</a>
 
-						<a href="#">
+						<a href="https://www.gwhatchet.com/?p=1116215&preview=true">
 							<div class="guide-news-card">
-								<img class="guide-news-image" src="./news.jpg">
+								<img class="guide-news-image" style="background-color: #a81753; object-fit: contain;" src="https://www.gwhatchet.com/wp-content/uploads/2019/03/web_plates-01.png">
 								<div class="guide-news-content">
-									<h3 class="guide-news-card-title">SA candidates agree: Community is lacking on campus</h3>
-									<p class="guide-news-card-body">Community-building initiatives have emerged on the platforms of nearly every candidate running for Student Association spots.</p>
-									<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Kelly Hooper</p>
+									<h3 class="guide-news-card-title">Addressing divestment, financial aid, racism: How top candidates' platforms match up</h3>
+									<p class="guide-news-card-body">Initiatives calling on officials to divest from fossil fuels, restructure the financial aid office and address hateful rhetoric appear across platforms.</p>
+									<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Makena Roberts</p>
+								</div>
+							</div>
+						</a>
+
+						<a href="https://www.gwhatchet.com/?p=1115505&preview=true">
+							<div class="guide-news-card">
+								<img class="guide-news-image" style="background-color: #a81753; object-fit: contain;" src="https://www.gwhatchet.com/wp-content/uploads/2019/03/web_plates-01.png">
+								<div class="guide-news-content">
+									<h3 class="guide-news-card-title">Fact check: Examining candidates' platform points</h3>
+									<p class="guide-news-card-body">The Hatchet looked through each candidate's platform to identify inaccurate or misleading information and provide additional context.</p>
+									<div class="guide-news-card-subtitle-block">News</div><p class="guide-news-card-subtitle">By Makena Roberts</p>
 								</div>
 							</div>
 						</a>
@@ -1230,25 +1346,25 @@
 
 					<div class="guide-section-header" style="margin-top: 3em;">
 						<h3 class="guide-section-header-title">Endorsements</h3>
-						<p class="guide-section-header-subtitle">Endorsements are writtent by Hatchet Writers in support of a candidate. Opinions
+						<p class="guide-section-header-subtitle">Endorsements are written by Hatchet Writers in support of a candidate. Opinions
 						expressed do not represent The Hatchet's opinons.</p>
 						<div class="endorsements-container">
 							<div class="endorsements-card-left">
-								<img class="endorsements-image" src="./smallprofile.jpg">
+								<img class="endorsements-image" src="https://www.gwhatchet.com/wp-content/uploads/2020/03/03072020_AB_HowardBrookins106-1500x1001.jpg">
 								<div class="endorsements-card-content">
 									<p class="endorsements-subtitle">For President</p>
-									<h3 class="endorsements-title">Drew Amstutz</h3>
-									<p class="endorsements-body">Hatchet Writer -- Endorses Drewfor President.</p>
-									<a href="#" class="endorsements-link">Read Opinon Piece</a>
+									<h3 class="endorsements-title">Howard Brookins</h3>
+									<p class="endorsements-body">Hatchet Writer Kiran Hoeffner-Shah Endorses Howard for President.</p>
+									<a href="https://www.gwhatchet.com/?p=1116340&preview=true" class="endorsements-link">Read Opinion Piece</a>
 								</div>
 							</div>
 							<div class="endorsements-card-right">
-								<img class="endorsements-image" src="./smallprofile.jpg">
+								<img class="endorsements-image" src="https://www.gwhatchet.com/wp-content/uploads/2020/03/03072020_DA_BrandonHill028-1500x1000.jpg">
 								<div class="endorsements-card-content">
-									<p class="endorsements-subtitle">For President</p>
-									<h3 class="endorsements-title">Drew Amstutz</h3>
-									<p class="endorsements-body">Hatchet Writer -- Endorses Drewfor President.</p>
-									<a href="#" class="endorsements-link">Read Opinon Piece</a>
+									<p class="endorsements-subtitle">For Executive VP</p>
+									<h3 class="endorsements-title">Brandon Hill</h3>
+									<p class="endorsements-body">Hatchet Writer Hannah Thacker Endorses Brandon for Executive VP.</p>
+									<a href="https://www.gwhatchet.com/?p=1116351&preview=true" class="endorsements-link">Read Opinion Piece</a>
 								</div>
 							</div>
 
